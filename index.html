@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+
+    <div class="menu" id="menuId">
+    
+        <a href="#" class="ativo">Home</a>
+        <a href="#quemSomos">Quem Somos</a>
+        <a href="#aEquipe">A Equipe</a>
+        <a href="#formFaleConosco">Fale Conosco</a>
+        <a href="javascript:void(0)" class="icon" onclick="iconBtn()"><i class="fa fa-bars"></i></a>
+
+     </div>
+     <div id="slider">
+
+         <div id="sliderImg">
+            <img class="selecao" src="img/dog-01.jpg">
+            <img  src="img/dog-02.jpg">
+            <img  src="img/dog-03.jpg">
+            <img  src="img/dog-04.jpg">
+            <img  src="img/dog-05.jpg">
+            <img  src="img/dog-06.jpg">
+
+         </div>
+        </div>
+        <div class="quemSomos" id="quemSomos">
+            <img src="img/dog-01.jpg">
+               <div class="quemSomosText">
+                <h1>Quem Somos</h1>
+                   <p>
+                       O Programa Adote Pet é a conexão que faltava entre você e o seu melhor amigo:
+                       através do cadastro e atuação de ONGs/protetores independentes e diversas instituições parceiras,
+                       milhares de cães e gatos têm a chance de encontrar um lar todos os dias. Para nós, adotar é um momento de felicidade,
+                       que deve ser construído com parceria, cuidado e responsabilidade.
+                       Somos uma rede de apaixonados por pets e queremos incentivar a adoção,
+                       conscientizar sobre a posse responsável e ajudar a diminuir o índice de animais abandonados através de projetos
+                       e ações para melhoria de bem estar de pets e instituições parceiras em todo o Brasil.
+                       
+                   </p>
+               
+            </div>
+        </div>
+        <div class="quemSomos" id="aEquipe">
+            <img src="img/dog-02.jpg">
+               <div class="quemSomosText">
+                <h1>Equipe</h1>
+                   <p>
+                       A equipe Adote Pet é uma familia sem fins lucrativos apaixonada pelos pets, tendo como nosso Fundador Robson Weenden Silva
+                       que ao se deparar com o abondono de animais tão especiais decidiu criar o Adote pet onde resgastamos e buscamos através de nossa rede 
+                       de amigos que conquistamos durante anos tem nos apoiados em buscar um lar responsavel para nossos serumaninhos, além do fundado temos 
+                       a Julia da Silva como coordenadora da equipe e Jerfesson Pereira da Silva como nosso auxiliar e companheiro na divulgação nas redes sociais.
+                       
+                   </p>
+               
+            </div>
+        </div>
+        <div id="formFaleConosco">
+            <form action="#" method="post">
+                <h1>Fale Conosco</h1>
+                <table >
+                   <tr>
+                       <td>
+                        <input type="text" placeholder="Digite aqui seu Nome Completo..." id="nome" name="nome">
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                        <input type="mail" placeholder="Digite aqui seu E-mail..." id="email" name="email">
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                        <input type="text" placeholder="Digite aqui seu Telefone..." id="telefone" name="telefone">
+                       </td>
+                   </tr>
+                   <tr>
+                    <td>
+                     <input type="text" placeholder="Digite aqui sua Cidade..." id="cidade" name="cidade">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                     <input type="text" placeholder="Digite aqui seu Estado..." id="estado" name="estado">
+                    </td>
+                </tr>
+                   <tr>
+                       <td>
+                        <textarea  cols="15" rows="10" placeholder="Deixe aqui seu comentario.."></textarea>
+                       </td>
+                   </tr>
+
+                </table>
+                <input type="submit" value="Enviar" style="margin-left: 40%; "/>
+            </form>
+        </div>
+        <footer>
+            <table>
+                <tr>
+                    <td><a href="">Quem somos</a></td>
+                    <td><a href="">A Equipe</a></td>
+                    <td><a href="">Fale Conosco</a></td>
+                </tr>
+            </table>
+            <ul>
+                <li><a href="#"><img src="/img/facebook.png"></a></li>
+                <li><a href="#"><img src="/img/instagram.png"></a></li>
+                <li><a href="#"><img src="/img/whatsapp.png"></a></li>
+            </ul>
+            <p align="center"><i class="fa fa-copyright" aria-hidden="true">Robson Silva 2021</i></p>
+        </footer>
+ 
+    <script>
+        function iconBtn(){
+            var itemX = document.getElementById("menuId");
+            if(itemX.className === "menu"){
+                itemX.className += " responsive";
+            }else{
+                itemX.className = "menu";
+            }
+        }
+    </script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
