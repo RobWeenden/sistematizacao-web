@@ -137,7 +137,7 @@ input[type=submit]:hover{
 }
 
 footer{
-    background-color: #048555;
+    background-color: #036843;
     width: 100%;
     height: 15vw;
     
@@ -154,7 +154,7 @@ footer table tr td a{
 footer table tr td {
     text-decoration: none;
     display: block;
-    color: #fff;
+    color: rgb(255, 251, 251);
 }
 
 footer ul {
@@ -168,6 +168,10 @@ footer ul li{
 footer ul li a img{
     height: 45px;
     margin: 5px;
+}
+
+footer p{
+    color:#fff;
 }
 
 @media screen and (max-width: 610px) {
